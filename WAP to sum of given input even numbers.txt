@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class abc {
+    public static void main(String[] args) {
+        System.out.println("Please Enter the numbers: ");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        int n=0;
+        for(int i=a;i<=b;i++){
+            if(i%2==0){
+             n=n+i;
+            }
+        }
+        System.out.println("The sum of even Numbers is: "+ n);
+    }
+}
