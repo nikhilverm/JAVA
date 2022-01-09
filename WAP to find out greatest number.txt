@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class abc {
+    public static void main(String[] args) {
+        System.out.println("Please Enter the numbers: ");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        if (a>=b && a>=c){
+            if(a>b && a>c){
+                System.out.println("A is gretest in all");
+            }
+            else {
+                System.out.println("Entered All Digits are Equal!");
+            }}
+        else if(b>a && b>c){
+            System.out.println("B is greater in all");
+        }
+        else {
+            System.out.println("C is gratest number in All");
+        }
+    }
+}
