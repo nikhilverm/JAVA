@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Armstrno {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int num= sc.nextInt();
+        int a=num;
+        double temp,armstr = 0;
+        while (num>0){
+           temp= num%10;
+           temp=Math.pow(temp,3);
+           armstr =armstr+temp;
+           num=num/10;
+        }
+         if(armstr==a){
+            System.out.println("Yes number is Armstrong");
+        }
+         else{
+            System.out.println("This is not armstrong number");
+        }
+    }
+}
